@@ -1,0 +1,23 @@
+Milestone 1
+
+End-to-End Analytics Pipeline Plan
+Step 1 - Data Ingestion & Integrity Validation
+o	Library : pandas
+o	Task: Load all the dataset rows to validate types and zero nulles.
+Step 2 - Analysis of various disparities & Uncovering of Trend
+o	Libraries: pandas, matplotlib, seaborn
+o	Task for Q1: Track the change in diabetes prevalence in California over 7 years & Detect the groups with the highest prevalence 
+o	Task for Q3: Calculate Max difference between the demographic groups
+Step 3 - Engineering of specific Features & Preparation of Data Matrix
+o	Libraries: pandas, scikit-learn
+o	Task: Convert Starta & Starta Name to dummy variable
+o	Task: Use Standrdscaler to prepare the data for the Ridge Regression
+Step 4 - Parametric Regression & Future Forecasting
+o	Library: scikit-learn
+o	Task for Q2: Try to fit the Linear and Ridge regression models within the time period  from 2012 to 2018
+o	Task for Q2: Perform 5-Fold Cross-Validation for optimal Ridge alpha parameter.
+o	Task for Q2: Create the future forecast for the time period from 2019 to 2029.
+Step 5 - Interpretation of the Results & Connecting the Results with the real-world insights 
+o	Task: Compare the metrics between Linear and Ridge regressions 
+o	Task: Interpret the results by extracting feature coefficiencies to identify risks
+o	Task: Transform the results of the interpretation intro real-world insights with the help of visualisation tools.
