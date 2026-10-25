@@ -1,0 +1,37 @@
+Milestone 2 - Data Pipeple Extended
+
+Step 1 - Data Ingestion and Data Verification 
+o  Libraries: pandas
+o  Operation - Load the raw data from the Excel file - Adults with Diabetes Per 100.
+o  Verification: verify all data across 8 columns, check the dimensions of the loaded data, confirm the absence of missing values and zero null for the complete data verification.
+
+Step 2 - Initial Data Analysis 
+o  Libraries: pandas, matplotlib, seaborn
+o  Operation - Conduct univariate statistics analysis and calculate bivariate disparity.
+o  Dependency: Proper data ingestion and data verification are required in Step 1.
+
+Step 3 - Engineering of Specific Features & Preparation of Data Matrix
+o  Libraries: scikit-learn (sklearn.preprocessing & sklearn.compose)
+o  Operation - Transform categorical variables ( Strata and Strata Name) into quantitative indicator matrices by applying the One Hot Encoding (Dummy Variable Generation). To normalize these numerical variables for penalty weighting to be assigned equally, StandardScaler should be applied. 
+o   OneHotEncoder: Converts qualitative categorical attributes (Strata, Strata Name) into numerical binary variables.
+o   StandardScaler: Normalizes numerical features.
+o   ColumnTransformer: Connects preprocessing steps into an united pipeline structure
+o   Dependency: Proper data ingestion and data verification are required in Step 1.
+
+Step 4 - Parametric Modeling and 5-Fold Cross-Validation
+o  Libraries: scikit-learn (sklearn.linear_model & sklearn.model_selection)
+o  Operation - Train and evaluate two parametic regresson models - Liner and Ridge on the dataset. Then conduct 5 Fold Cross validation to to optimize the L2 penalty for Ridge regression.
+o  LinearRegression: Trains the OLS model.
+o  Ridge: Trains the L2-regularized regression model to control multicollinearity.
+o  KFold & cross_val_score: Conducts 5-Fold Cross-Validation to optimize the regularization hyperparameter.
+o  Dependency: Standardized feature matrices are needed from Step 3
+
+Step 5 - Predictive Forecasting (2019–2029)
+o  Libraries: numpy, scikit-learn (sklearn.metrics)
+o  Operations: Generate the future projections of diabetes prevalence across the demographic variables until 2029. Verify the model performance by using Mean Squared Error (MSE) and coefficient of determination.
+o  Mean_squared_error and r2_score: Estimates accuracy of the model
+o  Dependency: Cross-validated and trained parameters are required from Step 4
+
+Step 6 – Interpretation of the Results 
+o  Libraries: seaborn, matplotlib.
+o  Operation – Generate visual charts reflecting the forecast of the research and translate the output into real-world insights for healthcare professionals.
