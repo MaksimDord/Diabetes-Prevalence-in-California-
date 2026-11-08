@@ -1,10 +1,10 @@
 # Diabetes-Prevalence-in-California-
 
 ## Table of Contents
-- [Problem](#Problem)
-- [Dataset Source](#Datasaet Source)
-- [Research Questions](#Research Questions)
-- [Planned Approach](#Planned Approach)
+- [Problem](#problem)
+- [Dataset Source](#dataset-source)
+- [Research Questions](#research-questions)
+- [Planned Approach](#planned-approach)
 
 ## Problem
 The aim of the project is to help the professional medical community of California, research departments, and the state authorities in the field of public health to identify specific health disparities across categories such as race/ethnicity, income, age, education. By analyzing these disparities related to the prevalence of diabeties among Californians, I can help the health authorities to identify specific risk factors correlating with the spread of diabetes.
